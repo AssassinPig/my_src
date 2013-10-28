@@ -3,13 +3,12 @@
 #include <boost/thread.hpp>
 #include <boost/thread/thread.hpp>
 #include <boost/thread/pthread/once.hpp>
-//#include <libs/thread/src/pthread/thread.cpp>
-//#include <libs/thread/src/pthread/once.cpp>
 using namespace boost;
 
 #include <string>
 #include <iostream>
 using namespace std;
+
 
 mutex io_mu;
 //void printing(atom_int& x, const string& s)
@@ -21,13 +20,36 @@ void printing(const string& str)
 	}
 }
 
+
+class A
+{
+public:
+	void print()
+	{
+		cout<<"A::print()"<<endl;	
+	}
+
+	void print1(int n)
+	{
+		cout<<"A::print(int n) with "<<n<<endl;	
+	}
+};
+
 int main()
 {
-//atom_int x;
-
-//thread(printing, ref(x), "hello");
-//thread(printing, ref(x), "boost");
+	//atom_int x;
+	
+	//thread(printing, ref(x), "hello");
+	//thread(printing, ref(x), "boost");
 	boost::thread t1(printing, "hello"); 
 	t1.join();
+
+	A a;
+	boost::function<void ()> fun = boost::bind(&A::print, &a);
+	fun();
+
+	boost::function<void (int)> fun1 = boost::bind(&A::print1, &a, _1);
+	fun1(2);
+
 }
 
