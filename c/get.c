@@ -71,6 +71,7 @@ int main( int argc, char *argv[] )
 				memset(buff, 0, 1024);	
 				n = recv(sock, buff, 1024, 0);
 				//printf("recv %d :%s", n, buff);
+				printf("%s",buff);
 			}while(n==1024 || n!=0);
 			//printf("recv all\n");
 		}

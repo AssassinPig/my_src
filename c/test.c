@@ -4,6 +4,7 @@
 //#include "stack.h"
 #include "list.h"
 #include "zmalloc.h"
+#include "zstack.h"
 
 extern zpool_t* pool;
 extern zpool_t* create_pool(int size);
@@ -29,6 +30,18 @@ int main(int nargc, char* argv[])
 //	stack_t* s;
 //	s = malloc(sizeof(stack_t));
 //	init(s);
+
+//	zstack_t* stack = create_stack();
+//	push(stack, "1");
+//	push(stack, "2");
+//	push(stack, "3");
+//	
+//	zstack_node_t* node = pop(stack);
+//	node = pop(stack);
+//	
+//	clear_stack(stack);
+//	printf("node->data %s\n", (const char*)node->data);
+
 	
 	//list 
 //	zlist_t* list = create_list();
