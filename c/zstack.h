@@ -21,5 +21,6 @@ void clear_stack(zstack_t* stack);
 
 zstack_node_t* pop(zstack_t* stack);
 void push(zstack_t* stack, void* data);
+zstack_node_t* top(zstack_t* stack);
 
 #endif //_ZSTACK_H__

@@ -6,7 +6,7 @@ SET(CMAKE_BUILD_TYPE Debug)
 #SET(CMAKE_C_FLAGS_DEBUG "-O3 -Wall -g -std=c99")
 SET(CMAKE_C_FLAGS_DEBUG "-O3 -Wall -g -std=gnu99")
 
-ADD_EXECUTABLE(test test.c zmalloc.c list.c zstack.c)
+ADD_EXECUTABLE(test test.c zmalloc.c list.c zstack.c ztree.c zqueue.c)
 ADD_EXECUTABLE(socks5 socks5.c)
 TARGET_LINK_LIBRARIES(socks5 pthread)
 
@@ -29,6 +29,11 @@ ADD_EXECUTABLE(select_test select_test.c)
 
 ADD_EXECUTABLE(productor_consumer productor_consumer.c)
 TARGET_LINK_LIBRARIES(productor_consumer pthread)
+
+ADD_EXECUTABLE(share_memory01 share_memory01.c)
+ADD_EXECUTABLE(share_memory02 share_memory02.c)
+TARGET_LINK_LIBRARIES(share_memory01 pthread)
+TARGET_LINK_LIBRARIES(share_memory02 pthread)
 
 #INCLUDE_DIRECTORIES(/usr/include/mysql/)
 #LINK_DIRECTORIES(/usr/lib/mysql/)

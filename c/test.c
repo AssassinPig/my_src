@@ -5,6 +5,8 @@
 #include "list.h"
 #include "zmalloc.h"
 #include "zstack.h"
+#include "ztree.h"
+#include "zqueue.h"
 
 extern zpool_t* pool;
 extern zpool_t* create_pool(int size);
@@ -67,6 +69,44 @@ int main(int nargc, char* argv[])
 //	}
 //
 //	printf("list.count=%d\n", CountNode(list));
+
+	//tree
+	ztree* tree = create_tree();	
+	srand(NULL);			
+	for(int i=0; i<10; ++i) {
+		int n = rand()%100;
+		build_tree(tree, n);
+		printf("%d\t", n);
+	}
+	printf("\n");
+
+//	preorder(tree);
+//	printf("\n");
+//	preorder2(tree);
+//	printf("\n");
+
+	midorder(tree);
+	printf("\n");
+	midorder2(tree);
+	printf("\n");
+
+//	postorder(tree);
+//	printf("\n");
+//	postorder2(tree);
+//	printf("\n");
+
+	//queue
+//	zqueue_t* queue = create_queue();	
+//	int array_data[10];
+//	for(int i=0; i<10; ++i) {
+//		array_data[i] = i;
+//		enqueue(queue, &array_data[i]);
+//	}
+//		
+//	for(int i=0; i<10; ++i) {
+//		zqueue_node_t* node = dequeue(queue);
+//		printf("element[%d] in queue %d\n", i, *(int*)node->data);
+//	}
 
 	//malloc
 //	pool = create_pool(64);

@@ -54,3 +54,7 @@ void push(zstack_t* stack, void* data)
 	stack->top = node;	
 }
 
+zstack_node_t* top(zstack_t* stack) 
+{
+	return stack->top;	
+}
