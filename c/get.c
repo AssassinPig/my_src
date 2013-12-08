@@ -53,8 +53,8 @@ int main( int argc, char *argv[] )
 	{
 		char buff[1024];
 		memset(buff, 0, 1024);	
-		sprintf(buff, "GET http://www.csdn.net/ HTTP/1.0\r\n"\
-				"Host: www.csdn.net \r\n"\
+		sprintf(buff, "GET http://www.sina.com/%s HTTP/1.0\r\n"\
+				"Host: www.sina.com \r\n"\
 				"Accept: */*\r\n"\	
 				"Connection: close\r\n\r\n", argv[2]  	
 				);

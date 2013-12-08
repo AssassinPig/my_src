@@ -6,7 +6,16 @@ SET(CMAKE_BUILD_TYPE Debug)
 #SET(CMAKE_C_FLAGS_DEBUG "-O3 -Wall -g -std=c99")
 SET(CMAKE_C_FLAGS_DEBUG "-O3 -Wall -g -std=gnu99")
 
-ADD_EXECUTABLE(test test.c zmalloc.c list.c zstack.c ztree.c zqueue.c)
+ADD_EXECUTABLE(test
+		test.c 	
+		zmalloc.c 
+		list.c
+		zstack.c
+		ztree.c 
+		zqueue.c
+		zstack02.c
+                #zmultipletree.c
+		)
 ADD_EXECUTABLE(socks5 socks5.c)
 TARGET_LINK_LIBRARIES(socks5 pthread)
 

@@ -6,14 +6,9 @@
 #include <netinet/in.h>                                                                 
 #include <fcntl.h>                                                                      
 #include <assert.h>                                                                     
-#include <stdio.h>                                                                      
 #include <errno.h>                                                                      
-                                                                                        
 #include <signal.h>                                                                     
-#include <unistd.h>                                                                     
-                                                                                        
 #include <sys/socket.h>                                                                 
-#include <sys/types.h> 
 #include <sys/times.h>
 
 #include <sys/ioctl.h>
@@ -142,7 +137,7 @@ int main(int nargc, char* args[])
 
 	struct sockaddr_in sin;
         sin.sin_family = AF_INET;
-	char* BIND_IP = "192.168.0.105";	
+	char* BIND_IP = "192.168.0.120";	
         sin.sin_addr.s_addr = inet_addr(BIND_IP);
 	int LISTEN_PORT = atoi(args[nargc-2]);
         sin.sin_port = htons(LISTEN_PORT);

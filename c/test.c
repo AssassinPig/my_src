@@ -5,8 +5,11 @@
 #include "list.h"
 #include "zmalloc.h"
 #include "zstack.h"
+#include "zstack02.h"
 #include "ztree.h"
 #include "zqueue.h"
+
+#include "sort.h"
 
 extern zpool_t* pool;
 extern zpool_t* create_pool(int size);
@@ -43,7 +46,14 @@ int main(int nargc, char* argv[])
 //	
 //	clear_stack(stack);
 //	printf("node->data %s\n", (const char*)node->data);
-
+	
+//	zstack02_t* stack02 = create_stack02(10);
+//	push02(stack02, "1");
+//	push02(stack02, "2");
+//	push02(stack02, "3");
+//	push02(stack02, "4");
+//	zstack_node02_t* node = pop02(stack02);
+//	printf("pop elem %s\n", (const char*)node->data);
 	
 	//list 
 //	zlist_t* list = create_list();
@@ -85,10 +95,10 @@ int main(int nargc, char* argv[])
 //	preorder2(tree);
 //	printf("\n");
 
-	midorder(tree);
-	printf("\n");
-	midorder2(tree);
-	printf("\n");
+//	midorder(tree);
+//	printf("\n");
+//	midorder2(tree);
+//	printf("\n");
 
 //	postorder(tree);
 //	printf("\n");
@@ -144,5 +154,19 @@ int main(int nargc, char* argv[])
 //		printf("s2 != s3\n");
 //	}
 
+	//bubble_sort();
+
+//	int a[] = {3, 4, 6, 1, 8, 2, 7, 9, 5, 0};
+//	for(int i=0; i<10; ++i) {
+//		printf("%d\t", a[i]);
+//	}
+//	printf("\n");
+//	zsort(a, 0, 9);
+//	for(int i=0; i<10; ++i) {
+//		printf("%d\t", a[i]);
+//	}
+//	printf("\n");
+
+	//insertion_sort();
 	return 0;
 }
