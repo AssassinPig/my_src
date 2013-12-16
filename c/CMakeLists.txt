@@ -6,8 +6,8 @@ SET(CMAKE_BUILD_TYPE Debug)
 #SET(CMAKE_C_FLAGS_DEBUG "-O3 -Wall -g -std=c99")
 SET(CMAKE_C_FLAGS_DEBUG "-O3 -Wall -g -std=gnu99")
 
-ADD_EXECUTABLE(test
-		test.c 	
+ADD_EXECUTABLE(main
+		main.c 	
 		zmalloc.c 
 		list.c
 		zstack.c
