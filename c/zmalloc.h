@@ -1,4 +1,4 @@
-#include "list.h"
+#include "zlist.h"
 
 #ifndef _ZMALLOC_H_
 #define _ZMALLOC_H_

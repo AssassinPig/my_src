@@ -9,7 +9,7 @@ SET(CMAKE_C_FLAGS_DEBUG "-O3 -Wall -g -std=gnu99")
 ADD_EXECUTABLE(main
 		main.c 	
 		zmalloc.c 
-		list.c
+		zlist.c
 		zstack.c
 		ztree.c 
 		zqueue.c
