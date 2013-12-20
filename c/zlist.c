@@ -53,12 +53,29 @@ int CountNode(zlist_t* list)
 	return count;
 }
 
+int list_find_node(zlist_t* list, void* data)
+{
+    if(!list) 
+        return -1;
+
+    zlist_node_t* node = list;	
+
+    while(node->next){
+        if(node->data == data) {
+            return 0; 
+        }
+        node = node->next;		
+    }
+
+    return -1; 
+}
+
 void ClearList(zlist_t* list)
 {
-	while(list){
-		zlist_node_t* node = list;
-		list = list->next;
-		free(node);	
-	}	
+    while(list){
+        zlist_node_t* node = list;
+        list = list->next;
+        free(node);	
+    }	
 }
 

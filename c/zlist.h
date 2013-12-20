@@ -15,6 +15,7 @@ zlist_node_t* create_node();
 void addNode(zlist_t* list, void* data);
 void* DelNode(zlist_t* list, void* data);
 int CountNode(zlist_t* list);
+int list_find_node(zlist_t* list, void* data);
 void ClearList(zlist_t* list);
 
 #endif //_ZLIST_H_ 

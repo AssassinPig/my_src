@@ -14,6 +14,7 @@ ADD_EXECUTABLE(main
 		ztree.c 
 		zqueue.c
 		zstack02.c
+                zhash.c
                 #zmultipletree.c
 		)
 ADD_EXECUTABLE(socks5 socks5.c)

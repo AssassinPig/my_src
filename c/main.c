@@ -7,6 +7,7 @@
 #include "zstack02.h"
 #include "ztree.h"
 #include "zqueue.h"
+#include "zhash.h"
 
 #include "sort.h"
 
@@ -82,14 +83,14 @@ int main(int nargc, char* argv[])
 //	printf("list.count=%d\n", CountNode(list));
 
 	//tree
-	ztree* tree = create_tree();	
-	srand(NULL);			
-	for(int i=0; i<10; ++i) {
-		int n = rand()%100;
-		build_tree(tree, n);
-		printf("%d\t", n);
-	}
-	printf("\n");
+//	ztree* tree = create_tree();	
+//	srand(NULL);			
+//	for(int i=0; i<10; ++i) {
+//		int n = rand()%100;
+//		build_tree(tree, n);
+//		printf("%d\t", n);
+//	}
+//	printf("\n");
 
 //	preorder(tree);
 //	printf("\n");
