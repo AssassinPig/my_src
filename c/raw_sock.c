@@ -11,7 +11,6 @@
 #include <string.h>
 #include <sys/socket.h>
 #include <arpa/inet.h>
-#include "socks5.h"
 
 int main( int argc, char *argv[] )
 {

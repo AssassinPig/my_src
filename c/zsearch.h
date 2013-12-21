@@ -21,3 +21,10 @@ int zbinary_search(int a[], int value, int start, int end)
 
     return -1;
 }
+
+int test_fun()
+{
+    while(1) {
+        int i=0; 
+    }
+}
