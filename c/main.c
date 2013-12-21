@@ -9,7 +9,8 @@
 #include "zqueue.h"
 #include "zhash.h"
 
-#include "sort.h"
+#include "zsort.h"
+#include "zsearch.h"
 
 #include <sys/time.h>
 
@@ -157,6 +158,7 @@ int main(int nargc, char* argv[])
 //	}
 
 	//bubble_sort();
+	//insertion_sort();
 
 //	int a[] = {3, 4, 6, 1, 8, 2, 7, 9, 5, 0};
 //	for(int i=0; i<10; ++i) {
@@ -164,12 +166,20 @@ int main(int nargc, char* argv[])
 //	}
 //	printf("\n");
 //	zsort(a, 0, 9);
+//      srand(NULL);
+//      zqsort(a, 0, 9);
+//
 //	for(int i=0; i<10; ++i) {
 //		printf("%d\t", a[i]);
 //	}
 //	printf("\n");
 
-	//insertion_sort();
+//      int pos = zbinary_search(a, 5, 0, 9);
+//      printf("search pos=%d\n", pos);
+//      pos = zbinary_search(a, 11, 0, 9);
+//      printf("search pos=%d\n", pos);
+//      pos = zbinary_search(a, -2, 0, 9);
+//      printf("search pos=%d\n", pos);
 
         return 0;
 }

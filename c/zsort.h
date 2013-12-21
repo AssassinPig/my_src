@@ -67,3 +67,41 @@ void zsort(int a[], int i, int j)
 	if(start<j) zsort(a, start, j-1);	
 	if(i<end) zsort(a,  i+1, end);	
 }
+
+int partition(int a[], int i, int j)
+{
+   int value = a[i];
+   i--;
+   j++;
+
+   while(1) {
+       do{
+           j--;
+       } while(a[j]>value);
+
+       do{
+           i++;
+       }while(a[i]<value);
+
+       if(i>=j) {
+            break;
+       } else {
+           int tmp = a[i];
+           a[i] = a[j];
+           a[j] = tmp;
+       } 
+   }
+
+   return j;
+}
+
+void zqsort(int a[], int i, int j)
+{
+    int k; 
+    while(i<j) {
+        k = partition(a, i, j);
+        zqsort(a, i, k); 
+        i=k+1;
+    }
+}
+
