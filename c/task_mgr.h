@@ -19,6 +19,7 @@ typedef struct task_mgr task_mgr_t;
 struct task{
     enum task_status status; 
     int (*task_fun)(void* data);
+
     pthread_t pid;
     void* task_data;
     pthread_cond_t recv_task_cond;
@@ -34,18 +35,20 @@ struct task_mgr{
     pthread_cond_t finish_task_cond;
     int free_task_count;
     pthread_mutex_t free_task_mutex;
+    pthread_t admin_pthid;
 };
 
 typedef int (*task_fun)(void* data);
+typedef void* (*pth_fun)(void* data);
 
 void* task_fun_pth(void* data);
 
-task_mgr_t* create_task_mgr(int count, task_fun fun); 
+task_mgr_t* create_task_mgr(int count, pth_fun pfun); 
 
 int clear_task_mgr(task_mgr_t* mgr);
 
-void task_mgr_loop(task_mgr_t* mgr);
+void* task_mgr_loop(void* mgr_data);
 
-int task_mgr_add_task(task_mgr_t* mgr, void* data);
+int task_mgr_add_task(task_mgr_t* mgr, task_fun pfun, void* data);
 
 #endif //__TASK_MGR_H__

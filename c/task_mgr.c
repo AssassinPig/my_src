@@ -15,6 +15,8 @@ void* task_fun_pth(void* data)
        
         if(task->status == task_status_running) {
             //excute process funcation
+            printf("task_fun_pth\n");
+            task->task_fun(task->task_data);
 
             pthread_mutex_lock(&task_mgr->free_task_mutex);
             task_mgr->free_task_count++;
@@ -31,22 +33,27 @@ void* task_fun_pth(void* data)
     return NULL;
 }
 
-int db_query_task_fun(void* data)
+task_mgr_t* create_task_mgr(int count, pth_fun pfun) 
 {
-    return 0;
-}
+    task_mgr_t* mgr = (task_mgr_t*)malloc(sizeof(task_mgr_t));
+    mgr->count = count;
+    mgr->free_task_count = count;
+    mgr->task_list = calloc(count, sizeof(task_t));
+    mgr->status = task_mgr_status_idle;
+    mgr->free_task_mutex = (pthread_mutex_t)PTHREAD_MUTEX_INITIALIZER;
+    mgr->finish_task_cond = (pthread_cond_t)PTHREAD_COND_INITIALIZER;
 
-task_mgr_t* create_task_mgr(int count, task_fun fun) 
-{
-    task_mgr_t* ret_mgr = (task_mgr_t*)malloc(sizeof(task_mgr_t));
-    ret_mgr->count = count;
-    ret_mgr->free_task_count = count;
-    ret_mgr->task_list = calloc(count, sizeof(task_t));
-    ret_mgr->status = task_mgr_status_idle;
-    ret_mgr->free_task_mutex = (pthread_mutex_t)PTHREAD_MUTEX_INITIALIZER;
-    ret_mgr->finish_task_cond = (pthread_cond_t)PTHREAD_COND_INITIALIZER;
+    pthread_create(&mgr->admin_pthid, NULL, task_mgr_loop, mgr); 
+    for(int i=0; i<mgr->count; ++i) {
+        mgr->task_list[i].task_mgr = mgr;
+        mgr->task_list[i].recv_task_cond = (pthread_cond_t)PTHREAD_COND_INITIALIZER;
+        mgr->task_list[i].recv_task_mutex = (pthread_mutex_t)PTHREAD_MUTEX_INITIALIZER;
+        mgr->task_list[i].task_data = NULL;
+        mgr->task_list[i].task_fun = pfun;
+        pthread_create(&(mgr->task_list[i].pid), NULL, task_fun_pth, (void*)&(mgr->task_list[i]));  
+    }
 
-    return ret_mgr;
+    return mgr;
 } 
 
 int clear_task_mgr(task_mgr_t* mgr)
@@ -54,21 +61,18 @@ int clear_task_mgr(task_mgr_t* mgr)
     return 0;
 }
 
-void task_mgr_loop(task_mgr_t* mgr)
-{
-    for(int i=0; i<mgr->count; ++i) {
-        mgr->task_list[i].task_mgr = mgr;
-        mgr->task_list[i].recv_task_cond = (pthread_cond_t)PTHREAD_COND_INITIALIZER;
-        mgr->task_list[i].task_data = NULL;
-        pthread_create(&(mgr->task_list[i].pid), NULL, task_fun_pth, (void*)&(mgr->task_list[i]));  
-    }
-
+void* task_mgr_loop(void* mgr_data)
+{   task_mgr_t* mgr = (task_mgr_t*)mgr_data;
     while(mgr->status != task_mgr_status_exit) {
         //wait end all         
+        printf("task_mgr_loop\n");
+        sleep(1);
     } 
+
+    return NULL;
 }
 
-int task_mgr_add_task(task_mgr_t* mgr, void* data)
+int task_mgr_add_task(task_mgr_t* mgr, task_fun pfun, void* data)
 {
     while(mgr->status != task_mgr_status_exit) {
         pthread_mutex_lock(&mgr->free_task_mutex); 
@@ -79,8 +83,9 @@ int task_mgr_add_task(task_mgr_t* mgr, void* data)
 
         for(int i=0; i<mgr->count; ++i) {
             if(mgr->task_list[i].status == task_status_idle) {
-
+                mgr->task_list[i].task_fun = pfun;
                 mgr->task_list[i].task_data = data;              
+                mgr->task_list[i].status = task_status_running;
                 mgr->free_task_count--;
                 pthread_cond_signal(&mgr->task_list[i].recv_task_cond);
                 pthread_mutex_unlock(&mgr->task_list[i].recv_task_mutex); 
@@ -94,7 +99,20 @@ int task_mgr_add_task(task_mgr_t* mgr, void* data)
     return 0;
 }
 
+int db_query_task_fun(void* data)
+{
+    printf("db_quer_task_fun excuting ...\n");
+    return 0;
+}
+
 int main(int argc, char **argv)
 {
+    task_mgr_t* task_mgr = create_task_mgr(10, task_fun_pth); 
+    int i=10;
+    while(i>0) {
+        task_mgr_add_task(task_mgr, db_query_task_fun, NULL); 
+        --i;
+    }
+
     return 0;
 }
