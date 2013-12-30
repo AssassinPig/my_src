@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <my_global.h>
 #include <mysql.h>
 
@@ -26,9 +27,8 @@ int createdb()
 
 int main(int argc, char **argv)
 {
-	printf("MySQL client version: %s\n", mysql_get_client_info());
+    //printf("MySQL client version: %s\n", mysql_get_client_info());
+    //createdb();
 
-	createdb();
-
-	return 0;
+    return 0;
 }

@@ -49,6 +49,7 @@ void* consumer(void* args)
             continue;
         }
 
+        printf("consumer here\n");
         pthread_mutex_unlock(&mutex);
     }
     return NULL;
