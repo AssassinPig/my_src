@@ -11,7 +11,7 @@ int createdb()
 		exit(1);
 	}
 	if (mysql_real_connect(conn, "localhost", "root", 
-				"123456", NULL, 3306, NULL, 0) == NULL) {
+				"root", NULL, 3306, NULL, 0) == NULL) {
 		printf("Error %u: %s\n", mysql_errno(conn), mysql_error(conn));
 		exit(1);
 	}
@@ -27,8 +27,8 @@ int createdb()
 
 int main(int argc, char **argv)
 {
-    //printf("MySQL client version: %s\n", mysql_get_client_info());
-    //createdb();
+    printf("MySQL client version: %s\n", mysql_get_client_info());
+    createdb();
 
     return 0;
 }
