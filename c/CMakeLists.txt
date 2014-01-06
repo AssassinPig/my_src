@@ -45,10 +45,6 @@ ADD_EXECUTABLE(share_memory02 share_memory02.c)
 TARGET_LINK_LIBRARIES(share_memory01 pthread)
 TARGET_LINK_LIBRARIES(share_memory02 pthread)
 
-#INCLUDE_DIRECTORIES(/usr/include/mysql/)
-#LINK_DIRECTORIES(/usr/lib/mysql/)
-#ADD_EXECUTABLE(test_mysql test_mysql.c)
-#TARGET_LINK_LIBRARIES(test_mysql pthread)
 ADD_EXECUTABLE(task_mgr task_mgr.c)
 TARGET_LINK_LIBRARIES(task_mgr pthread)
 
