@@ -181,7 +181,5 @@ int main(int nargc, char* argv[])
 //      pos = zbinary_search(a, -2, 0, 9);
 //      printf("search pos=%d\n", pos);
 
-        test_fun();
-
         return 0;
 }
