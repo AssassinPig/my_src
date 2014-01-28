@@ -1,4 +1,4 @@
-require "socket"
+require 'socket'
 include Socket::Constants
 
 #class Client
@@ -25,8 +25,15 @@ line="get"
 #break if n==100 
 #end
 
-s = TCPSocket.new '127.0.0.1', 27149 
-s.puts line
-s.gets line
-print line
-s.close
+#s = TCPSocket.new '127.0.0.1', 27149 
+#s.puts line
+#s.gets line
+#print line
+#s.close
+
+socket = TCPSocket.new("www.ruby-lang.org", 80)
+socket.puts "GET /en/index.html"
+while (line = socket.gets)
+        puts line
+end
+socket.close

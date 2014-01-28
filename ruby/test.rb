@@ -19,3 +19,31 @@ print "\n"
 
 print 1.0e3
 print "\n"
+
+tmp_no = 1
+def test(tmp_no)
+  print tmp_no.to_s 
+  print "\n"
+  tmp_no += 1
+end
+
+tmp_no = test(tmp_no)
+tmp_no = test(tmp_no)
+
+
+def test_ref(a)
+  a += 1
+end
+
+ref_value=2
+test_ref(ref_value)
+print "#{ref_value}\n"
+ref_value=test_ref(ref_value)
+print "#{ref_value}\n"
+
+or_value = "sdfsd"
+#new_value 
+new_value ||= or_value
+print "#{new_value}\n"
+
+

@@ -7,7 +7,7 @@ class ChatServer
         @descriptors = Array::new
         @serverSocket = TCPServer::new("", port)
         @serverSocket.setsockopt(Socket::SOL_SOCKET, Socket::SO_REUSEADDR, 1)	
-        printf("Chat server started on port%d\n",port)
+        printf "Chat server started on port%d\n", port
         @descriptors.push(@serverSocket)
     end #initialize
 

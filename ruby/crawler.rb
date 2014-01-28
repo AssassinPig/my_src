@@ -1,7 +1,8 @@
+#encoding: utf-8
 require "rubygems"
 require "mechanize"
 
-class Crawler < WWW::Mechanize
+class Crawler < Mechanize
 
     attr_accessor :callback
     INDEX = 0
@@ -12,7 +13,7 @@ class Crawler < WWW::Mechanize
         super
         init
         @first = true
-        self.user_agent_alias = "Windows IE 6"
+        #self.user_agent_alias = "Windows IE 6"
     end
 
     def init
@@ -25,7 +26,7 @@ class Crawler < WWW::Mechanize
 
     def perform_index(link)
         self.get(link)
-        if(self.page.class.to_s == "WWW::Mechanize::Page")
+        if(self.page.class.to_s == "Mechanize::Page")
             links = self.page.links.map {|link| link.href } - @visited
             links.each do |alink|
                 start(alink)
@@ -43,9 +44,14 @@ class Crawler < WWW::Mechanize
             end
             case action
             when INDEX
+                puts "======================"
+                puts "link #{link} save as:"
+                #puts File.basename(link)
+                puts "======================"
+                #self.get(link).save_as(File.basename(link))
                 perform_index(link)
             when DOWNLOAD
-                self.get(link).save_as(File.basename(link))
+                #self.get(link).save_as(File.basename(link))
             when PASS
                 puts "passing on #{link}"
             end
