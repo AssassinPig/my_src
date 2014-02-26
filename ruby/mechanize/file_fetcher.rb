@@ -13,15 +13,11 @@ todo_list = Array.new
 visited_list = Array.new
 
 #todo_list << "http://linux.linuxidc.com/"
-#todo_list << "http://www.dbmeizi.com/"
-todo_list << "http://www.baozhao.me/"
-tmp_no = 1 
+todo_list << "http://www.mynvshen.com/12002/top"
 
 def save_page(page, tmp_no)
       #print "process link : #{page.title}\n"
-
-      file_name = tmp_no.to_s 
-      tmp_no += 1
+      file_name  
 
       #print "save filename: #{file_name}\n"     
       html_file = File.join(File.expand_path(File.dirname(__FILE__) + "/web_fetched"), file_name) 
@@ -63,13 +59,11 @@ while true
     image_agent.user_agent_alias = 'Mac Safari'
     image_page = image_agent.get(image.url)
     if image_page.class.to_s == "Mechanize::File" || image_page.class.to_s == "Mechanize::Image"
-      filename = "#{tmp_no.to_s}.jpg" 
+      filename = image.url.to_s.split('/').last 
 
       image_file = File.join(File.expand_path(File.dirname(__FILE__) + "/web_fetched"), filename) 
       puts "save as: #{image_file}"
       image_page.save(image_file)
-
-      tmp_no += 1
     end
   end
 
@@ -77,8 +71,8 @@ while true
     link_href_s = link.href.to_s
 
     puts "link:"
-    puts current_page_href
-    puts link_href_s
+    puts "current_page_href: #{current_page_href}"
+    puts "link_href_s: #{link_href_s}"
 
     if !link_href_s.start_with?('http')
       if link_href_s.start_with?('/')
@@ -87,15 +81,13 @@ while true
 
       if current_page_href.end_with?('/')
         link_href_s = current_page_href + link_href_s 
-        puts "link_href_s:"
-        puts link_href_s
+        puts "link_href_s: #{link_href_s}"
       end
     end
 
     if !visited_list.include?(link_href_s)
       #if right_url?(link.href) && link.href.to_s.include?('dbmeizi')
-      #if link_href_s.include?('dbmeizi')
-      if link_href_s.include?('baozhao')
+      if link_href_s.include?('mynvshen')
         todo_list << link_href_s 
       end
 

@@ -46,4 +46,42 @@ or_value = "sdfsd"
 new_value ||= or_value
 print "#{new_value}\n"
 
+def test_array_ref(a)
+  #a.reverse #no
+  #a=a.reverse #no
+  #a.reverse  #no
+  a.reverse! #yes
+end
+a=[1,2,3]
+print "before #{a}\n"
+print "return #{test_array_ref(a)}\n"
+print "after #{a}\n"
 
+
+class MyClass
+  def myFun
+    @v=1 
+  end
+
+  def myPrivateFun
+  end
+end
+
+obj1=MyClass.new
+obj1.myFun
+obj2=MyClass.new
+print "#{obj1.instance_variables}\n"
+print "#{obj2.instance_variables}\n"
+print "#{MyClass.ancestors}\n"
+
+class MyChildClass < MyClass
+  def myPublicFun
+    myPrivateFun
+  end
+end
+
+childObj=MyChildClass.new
+childObj.myPublicFun
+
+print "#{$0}\n"
+print "#{__FILE__}\n"

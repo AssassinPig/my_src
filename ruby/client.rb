@@ -1,39 +1,25 @@
 require 'socket'
 include Socket::Constants
 
-#class Client
-#	public
-#	def initialize(addr, port)
-#	end
-#
-#	def run
-#	end
-#end
+class Client
+  public
+  def initialize(addr, port)
+    @addr = addr
+    @port = port
+    @socket = TCPSocket.new @addr, @port 
+  end
 
-#client=Client.new
-#client.run
+  def run
+    s.puts line
+    s.gets line
+    print line
+  end
 
-n=0
-line="get"
-#while 1 
-#s = TCPSocket.new '127.0.0.1', 27149 
-#print "puts \n", n
-#s.puts line
-#line = s.gets 
-#n = n+1
-#s.close
-#break if n==100 
-#end
-
-#s = TCPSocket.new '127.0.0.1', 27149 
-#s.puts line
-#s.gets line
-#print line
-#s.close
-
-socket = TCPSocket.new("www.ruby-lang.org", 80)
-socket.puts "GET /en/index.html"
-while (line = socket.gets)
-        puts line
+  def close
+    s.close
+  end
 end
-socket.close
+
+client=Client.new
+client.run
+

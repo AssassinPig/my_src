@@ -1,0 +1,581 @@
+# Logfile created on 2014-02-10 14:46:50 +0800 by logger.rb/41954
+I, [2014-02-10T14:46:50.465617 #4090]  INFO -- : Net::HTTP::Get: /12002/top
+D, [2014-02-10T14:46:50.465982 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:50.466099 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:50.466166 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:50.466285 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:50.466362 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:50.466420 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:52.684582 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:52.684832 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:52.684956 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:52 GMT
+D, [2014-02-10T14:46:52.685051 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:52.685141 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:52.685229 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:52.685290 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:52.685415 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:52 GMT; path=/, rr_session=Mz66Xvn6LtX62yDEkt8i0oBV2oqkY%2FprN62GwI3CPzhAL4OkQNrvRNbo9VIu5285Wq4YW%2BzP9kh%2BqW8U6tgLIMiBZiCgo%2B6vjXFMFZJQzq%2FlzPkzMwaL8WLn4fdxBt4NuMi5plkYs1%2FVvfPW%2FwsfFFk%2BTFA4xZiptAv6CEHKUMqzofeg%2BfN0ge8LABXU0TI9cVhyc%2ByIndSvdLgZ%2FoX9fipN3UWfjr61TKCQ%2Bq5Oj1oJ%2BGr5PpTu3rorKBwYAXP0FmocXJxd2WGlRolR9CPAc3Ck3nNG28qr9aOHQ4ZrEtPyS7zlyWZv9u42LFw7km2pDflJo%2FQuoFRmbCT%2Be2VIKgPvaJn1Kht2WVe8VtcvF99yJY0%2BNUro8NnppGzqcD7euqn4Kl9tZih1ASMZbwtAEXXyy5WB4bxSrZWrYkLpyo5pd1ziL6zytMoOhKk36YvL5F4sAF2jaESB2qnYhejP5A%3D%3D; expires=Mon, 10-Feb-2014 08:46:52 GMT; path=/, rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N; expires=Mon, 10-Feb-2014 08:46:52 GMT; path=/
+D, [2014-02-10T14:46:52.685507 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:52.685840 #4090] DEBUG -- : Read 2451 bytes (2451 total)
+D, [2014-02-10T14:46:52.686255 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:52.714837 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+D, [2014-02-10T14:46:52.715365 #4090] DEBUG -- : saved cookie: rr_session=Mz66Xvn6LtX62yDEkt8i0oBV2oqkY%2FprN62GwI3CPzhAL4OkQNrvRNbo9VIu5285Wq4YW%2BzP9kh%2BqW8U6tgLIMiBZiCgo%2B6vjXFMFZJQzq%2FlzPkzMwaL8WLn4fdxBt4NuMi5plkYs1%2FVvfPW%2FwsfFFk%2BTFA4xZiptAv6CEHKUMqzofeg%2BfN0ge8LABXU0TI9cVhyc%2ByIndSvdLgZ%2FoX9fipN3UWfjr61TKCQ%2Bq5Oj1oJ%2BGr5PpTu3rorKBwYAXP0FmocXJxd2WGlRolR9CPAc3Ck3nNG28qr9aOHQ4ZrEtPyS7zlyWZv9u42LFw7km2pDflJo%2FQuoFRmbCT%2Be2VIKgPvaJn1Kht2WVe8VtcvF99yJY0%2BNUro8NnppGzqcD7euqn4Kl9tZih1ASMZbwtAEXXyy5WB4bxSrZWrYkLpyo5pd1ziL6zytMoOhKk36YvL5F4sAF2jaESB2qnYhejP5A%3D%3D
+D, [2014-02-10T14:46:52.715744 #4090] DEBUG -- : saved cookie: rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+I, [2014-02-10T14:46:52.721373 #4090]  INFO -- : Net::HTTP::Get: /12002
+D, [2014-02-10T14:46:52.721510 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:52.721579 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:52.721633 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:52.721687 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:52.721740 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:52.721793 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:52.721847 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:52.905569 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:52.905796 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:52.905855 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:52 GMT
+D, [2014-02-10T14:46:52.905908 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:52.905960 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:52.906013 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:52.906066 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:52.906151 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:52 GMT; path=/
+D, [2014-02-10T14:46:52.906239 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:52.906366 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:52.906441 #4090] DEBUG -- : Read 766 bytes (1849 total)
+D, [2014-02-10T14:46:52.906633 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:52.908436 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:52.910120 #4090]  INFO -- : Net::HTTP::Get: /
+D, [2014-02-10T14:46:52.910204 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:52.910258 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:52.910311 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:52.910364 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:52.910432 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:52.910485 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:52.910586 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:53.088874 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:53.089051 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:53.089149 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:52 GMT
+D, [2014-02-10T14:46:53.089242 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:53.089333 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:53.089845 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:53.090140 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:53.090238 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:52 GMT; path=/
+D, [2014-02-10T14:46:53.090330 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:53.090482 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:53.090682 #4090] DEBUG -- : Read 1950 bytes (3033 total)
+D, [2014-02-10T14:46:53.090961 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:53.093625 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:53.691202 #4090]  INFO -- : Net::HTTP::Get: /about
+D, [2014-02-10T14:46:53.692239 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:53.693076 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:53.693449 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:53.693570 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:53.694267 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:53.694386 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:53.694479 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:53.870374 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:53.870438 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:53.870558 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:53 GMT
+D, [2014-02-10T14:46:53.870695 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:53.870805 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:53.870895 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:53.870984 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:53.871074 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:53 GMT; path=/
+D, [2014-02-10T14:46:53.871225 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:53.871403 #4090] DEBUG -- : Read 213 bytes (213 total)
+D, [2014-02-10T14:46:53.871761 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:53.872775 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:54.046932 #4090]  INFO -- : Net::HTTP::Get: /2002/top
+D, [2014-02-10T14:46:54.047091 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:54.047186 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:54.047438 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:54.047586 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:54.047677 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:54.047769 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:54.047860 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:54.231099 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:54.231659 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:54.231980 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:53 GMT
+D, [2014-02-10T14:46:54.232135 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:54.232225 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:54.232398 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:54.232493 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:54.232587 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:53 GMT; path=/
+D, [2014-02-10T14:46:54.232677 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:54.232926 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:54.233137 #4090] DEBUG -- : Read 1368 bytes (2451 total)
+D, [2014-02-10T14:46:54.233552 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:54.235580 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:54.242277 #4090]  INFO -- : Net::HTTP::Get: /9001/top
+D, [2014-02-10T14:46:54.242552 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:54.242744 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:54.242849 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:54.243015 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:54.243106 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:54.243198 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:54.243410 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:54.427613 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:54.427802 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:54.427967 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:53 GMT
+D, [2014-02-10T14:46:54.428058 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:54.428210 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:54.428299 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:54.428388 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:54.428478 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:53 GMT; path=/
+D, [2014-02-10T14:46:54.428567 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:54.428800 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:54.429189 #4090] DEBUG -- : Read 1363 bytes (2446 total)
+D, [2014-02-10T14:46:54.429460 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:54.431589 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:54.440390 #4090]  INFO -- : Net::HTTP::Get: /4001/top
+D, [2014-02-10T14:46:54.440631 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:54.441365 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:54.441470 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:54.441613 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:54.441727 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:54.441819 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:54.441909 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:54.624342 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:54.624776 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:54.624873 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:54 GMT
+D, [2014-02-10T14:46:54.625026 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:54.625115 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:54.625279 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:54.625369 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:54.625538 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:54 GMT; path=/
+D, [2014-02-10T14:46:54.625627 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:54.625806 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:54.626252 #4090] DEBUG -- : Read 1363 bytes (2446 total)
+D, [2014-02-10T14:46:54.626530 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:54.628448 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:54.656196 #4090]  INFO -- : Net::HTTP::Get: /1010/top
+D, [2014-02-10T14:46:54.657430 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:54.657562 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:54.657661 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:54.657755 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:54.657911 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:54.658005 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:54.658098 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:54.842876 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:54.843163 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:54.843405 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:54 GMT
+D, [2014-02-10T14:46:54.843610 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:54.843709 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:54.843802 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:54.843894 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:54.844048 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:54 GMT; path=/
+D, [2014-02-10T14:46:54.844139 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:54.844342 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:54.844687 #4090] DEBUG -- : Read 1369 bytes (2452 total)
+D, [2014-02-10T14:46:54.845039 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:54.847242 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:54.859038 #4090]  INFO -- : Net::HTTP::Get: /1001/top
+D, [2014-02-10T14:46:54.859203 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:54.859407 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:54.860272 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:54.860386 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:54.860484 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:54.860637 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:54.860732 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:55.048810 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:55.049030 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:55.049169 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:54 GMT
+D, [2014-02-10T14:46:55.049263 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:55.049356 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:55.049447 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:55.049538 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:55.049628 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:54 GMT; path=/
+D, [2014-02-10T14:46:55.049718 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:55.049892 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:55.050271 #4090] DEBUG -- : Read 1362 bytes (2445 total)
+D, [2014-02-10T14:46:55.050609 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:55.053745 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:55.059407 #4090]  INFO -- : Net::HTTP::Get: /1002/top
+D, [2014-02-10T14:46:55.060811 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:55.060908 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:55.061196 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:55.061360 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:55.061476 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:55.061621 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:55.061725 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:55.250076 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:55.250196 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:55.250257 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:54 GMT
+D, [2014-02-10T14:46:55.250313 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:55.250368 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:55.250423 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:55.250493 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:55.250550 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:54 GMT; path=/
+D, [2014-02-10T14:46:55.250644 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:55.250763 #4090] DEBUG -- : Read 2448 bytes (2448 total)
+D, [2014-02-10T14:46:55.250943 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:55.256141 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:55.262909 #4090]  INFO -- : Net::HTTP::Get: /2001/top
+D, [2014-02-10T14:46:55.263230 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:55.268263 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:55.268320 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:55.268453 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:55.268537 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:55.268596 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:55.268651 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:55.680495 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:55.680722 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:55.680841 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:55 GMT
+D, [2014-02-10T14:46:55.681008 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:55.681100 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:55.681256 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:55.681348 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:55.681439 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:54 GMT; path=/
+D, [2014-02-10T14:46:55.681529 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:55.681767 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:55.682098 #4090] DEBUG -- : Read 1362 bytes (2445 total)
+D, [2014-02-10T14:46:55.682443 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:55.684473 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:55.689735 #4090]  INFO -- : Net::HTTP::Get: /8001/top
+D, [2014-02-10T14:46:55.689900 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:55.690538 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:55.690661 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:55.690755 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:55.690846 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:55.690937 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:55.691088 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:55.863597 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:55.863842 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:55.863961 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:55 GMT
+D, [2014-02-10T14:46:55.864124 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:55.864216 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:55.864407 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:55.864500 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:55.864591 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:55 GMT; path=/
+D, [2014-02-10T14:46:55.864680 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:55.864814 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:55.865207 #4090] DEBUG -- : Read 1364 bytes (2447 total)
+D, [2014-02-10T14:46:55.865547 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:55.874955 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:55.890959 #4090]  INFO -- : Net::HTTP::Get: /school_list
+D, [2014-02-10T14:46:55.891424 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:55.891609 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:55.891725 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:55.891833 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:55.891938 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:55.892122 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:55.892226 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:56.061493 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:56.061688 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:56.061785 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:55 GMT
+D, [2014-02-10T14:46:56.061877 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:56.062009 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:56.062118 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:56.062208 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:56.062298 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:55 GMT; path=/
+D, [2014-02-10T14:46:56.062387 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:56.062899 #4090] DEBUG -- : Read 624 bytes (624 total)
+D, [2014-02-10T14:46:56.063244 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:56.064673 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:56.070609 #4090]  INFO -- : Net::HTTP::Get: /11002/top
+D, [2014-02-10T14:46:56.070787 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:56.070947 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:56.071040 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:56.071133 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:56.071223 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:56.071415 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:56.072236 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:56.244959 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:56.245136 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:56.245277 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:55 GMT
+D, [2014-02-10T14:46:56.245394 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:56.245484 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:56.245573 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:56.245664 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:56.245810 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:55 GMT; path=/
+D, [2014-02-10T14:46:56.245901 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:56.246073 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:56.246447 #4090] DEBUG -- : Read 1366 bytes (2449 total)
+D, [2014-02-10T14:46:56.246722 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:56.248781 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:56.256344 #4090]  INFO -- : Net::HTTP::Get: /6002/top
+D, [2014-02-10T14:46:56.256542 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:56.256639 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:56.256733 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:56.256887 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:56.256977 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:56.257069 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:56.257159 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:56.430454 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:56.430630 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:56.430692 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:55 GMT
+D, [2014-02-10T14:46:56.430923 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:56.430996 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:56.431052 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:56.431108 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:56.431176 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:55 GMT; path=/
+D, [2014-02-10T14:46:56.431234 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:56.431462 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:56.431709 #4090] DEBUG -- : Read 1366 bytes (2449 total)
+D, [2014-02-10T14:46:56.431948 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:56.433323 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:56.442284 #4090]  INFO -- : Net::HTTP::Get: /11001/top
+D, [2014-02-10T14:46:56.442403 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:56.442463 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:56.442521 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:56.442578 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:56.442636 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:56.442694 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:56.442751 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:56.624159 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:56.624402 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:56.624500 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:56 GMT
+D, [2014-02-10T14:46:56.624592 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:56.624683 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:56.624863 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:56.624955 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:56.625115 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:56 GMT; path=/
+D, [2014-02-10T14:46:56.625206 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:56.625466 #4090] DEBUG -- : Read 2449 bytes (2449 total)
+D, [2014-02-10T14:46:56.625744 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:56.627677 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:56.633000 #4090]  INFO -- : Net::HTTP::Get: //top
+D, [2014-02-10T14:46:56.633259 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:56.633379 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:56.633472 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:56.633563 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:56.633653 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:56.633747 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:56.633931 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:56.802825 #4090]  INFO -- : status: Net::HTTPNotFound 1.1 404 Not Found
+D, [2014-02-10T14:46:56.803108 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:56.803401 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:56 GMT
+D, [2014-02-10T14:46:56.803521 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:56.803655 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:56.803774 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:56.803869 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:56.803960 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:56.804206 #4090] DEBUG -- : Read 569 bytes (569 total)
+D, [2014-02-10T14:46:56.804487 #4090] DEBUG -- : gzip response
+I, [2014-02-10T14:46:56.808182 #4090]  INFO -- : Net::HTTP::Get: /2002
+D, [2014-02-10T14:46:56.808436 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:56.808555 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:56.808710 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:56.808804 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:56.808895 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:56.809066 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:56.809213 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:57.016237 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:57.016696 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:57.016798 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:56 GMT
+D, [2014-02-10T14:46:57.016975 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:57.017068 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:57.017228 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:57.017320 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:57.017480 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:56 GMT; path=/
+D, [2014-02-10T14:46:57.017587 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:57.017783 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:57.018203 #4090] DEBUG -- : Read 775 bytes (1858 total)
+D, [2014-02-10T14:46:57.018495 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:57.020214 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:57.027504 #4090]  INFO -- : Net::HTTP::Get: /9001
+D, [2014-02-10T14:46:57.028460 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:57.028586 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:57.029227 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:57.029325 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:57.029418 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:57.029510 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:57.029610 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:57.212193 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:57.212365 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:57.212527 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:56 GMT
+D, [2014-02-10T14:46:57.212619 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:57.212781 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:57.212980 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:57.213092 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:57.213183 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:56 GMT; path=/
+D, [2014-02-10T14:46:57.213272 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:57.213506 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:57.213854 #4090] DEBUG -- : Read 767 bytes (1850 total)
+D, [2014-02-10T14:46:57.214195 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:57.215626 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:57.222828 #4090]  INFO -- : Net::HTTP::Get: /4001
+D, [2014-02-10T14:46:57.223000 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:57.223480 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:57.223984 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:57.224079 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:57.224324 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:57.224430 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:57.224522 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:57.412864 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:57.413353 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:57.413477 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:56 GMT
+D, [2014-02-10T14:46:57.413616 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:57.413727 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:57.413826 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:57.413918 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:57.414016 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:56 GMT; path=/
+D, [2014-02-10T14:46:57.414173 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:57.414348 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:57.414673 #4090] DEBUG -- : Read 764 bytes (1847 total)
+D, [2014-02-10T14:46:57.414950 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:57.417551 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:57.421980 #4090]  INFO -- : Net::HTTP::Get: /1010
+D, [2014-02-10T14:46:57.422133 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:57.422228 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:57.422332 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:57.422525 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:57.422687 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:57.422781 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:57.422922 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:57.700817 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:57.701790 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:57.701956 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:57 GMT
+D, [2014-02-10T14:46:57.702266 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:57.702382 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:57.702474 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:57.702724 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:57.702819 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:57 GMT; path=/
+D, [2014-02-10T14:46:57.703428 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:57.704230 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:57.704587 #4090] DEBUG -- : Read 773 bytes (1856 total)
+D, [2014-02-10T14:46:57.704867 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:57.706668 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:57.715021 #4090]  INFO -- : Net::HTTP::Get: /1001
+D, [2014-02-10T14:46:57.715185 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:57.715491 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:57.715589 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:57.715681 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:57.715817 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:57.715930 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:57.716022 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:57.878683 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:57.878857 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:57.879186 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:57 GMT
+D, [2014-02-10T14:46:57.879424 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:57.879541 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:57.879632 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:57.879801 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:57.879893 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:57 GMT; path=/
+D, [2014-02-10T14:46:57.880045 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:57.880227 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:57.880572 #4090] DEBUG -- : Read 766 bytes (1849 total)
+D, [2014-02-10T14:46:57.880847 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:57.882614 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:57.889591 #4090]  INFO -- : Net::HTTP::Get: /1002
+D, [2014-02-10T14:46:57.889754 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:57.889878 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:57.890050 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:57.890145 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:57.890238 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:57.890330 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:57.890420 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:58.049448 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:58.049620 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:58.049737 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:57 GMT
+D, [2014-02-10T14:46:58.050095 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:58.050187 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:58.050280 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:58.050371 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:58.050462 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:57 GMT; path=/
+D, [2014-02-10T14:46:58.050604 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:58.050867 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:58.051196 #4090] DEBUG -- : Read 764 bytes (1847 total)
+D, [2014-02-10T14:46:58.051584 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:58.053363 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:58.058642 #4090]  INFO -- : Net::HTTP::Get: /2001
+D, [2014-02-10T14:46:58.058902 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:58.058998 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:58.059091 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:58.059181 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:58.059403 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:58.060366 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:58.060463 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:58.216065 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:58.216259 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:58.216424 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:57 GMT
+D, [2014-02-10T14:46:58.216566 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:58.216681 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:58.216772 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:58.216863 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:58.216953 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:57 GMT; path=/
+D, [2014-02-10T14:46:58.217146 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:58.217329 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:58.217673 #4090] DEBUG -- : Read 764 bytes (1847 total)
+D, [2014-02-10T14:46:58.217945 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:58.219868 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:58.225497 #4090]  INFO -- : Net::HTTP::Get: /8001
+D, [2014-02-10T14:46:58.225657 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:58.225796 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:58.225908 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:58.226014 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:58.226106 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:58.226206 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:58.226361 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:58.391058 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:58.391231 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:58.391678 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:57 GMT
+D, [2014-02-10T14:46:58.391848 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:58.391940 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:58.392099 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:58.392189 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:58.392353 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:57 GMT; path=/
+D, [2014-02-10T14:46:58.392508 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:58.392693 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:58.393122 #4090] DEBUG -- : Read 764 bytes (1847 total)
+D, [2014-02-10T14:46:58.393470 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:58.395227 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:58.401878 #4090]  INFO -- : Net::HTTP::Get: /11002
+D, [2014-02-10T14:46:58.402036 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:58.402132 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:58.402225 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:58.402390 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:58.402481 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:58.402572 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:58.402670 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:58.570225 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:58.570638 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:58.570758 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:58 GMT
+D, [2014-02-10T14:46:58.570850 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:58.571020 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:58.571111 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:58.571402 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:58.571518 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:58 GMT; path=/
+D, [2014-02-10T14:46:58.571607 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:58.571793 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:58.572211 #4090] DEBUG -- : Read 766 bytes (1849 total)
+D, [2014-02-10T14:46:58.572624 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:58.574544 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:58.586629 #4090]  INFO -- : Net::HTTP::Get: /6002
+D, [2014-02-10T14:46:58.586803 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:58.586940 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:58.587053 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:58.587144 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:58.587233 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:58.587432 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:58.587551 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:58.773559 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:58.773832 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:58.773933 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:58 GMT
+D, [2014-02-10T14:46:58.774024 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:58.774220 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:58.774310 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:58.774400 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:58.774489 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:58 GMT; path=/
+D, [2014-02-10T14:46:58.774579 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:58.774826 #4090] DEBUG -- : Read 1083 bytes (1083 total)
+D, [2014-02-10T14:46:58.775189 #4090] DEBUG -- : Read 764 bytes (1847 total)
+D, [2014-02-10T14:46:58.775553 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:58.777529 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
+I, [2014-02-10T14:46:58.782333 #4090]  INFO -- : Net::HTTP::Get: /11001
+D, [2014-02-10T14:46:58.782497 #4090] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-02-10T14:46:58.782657 #4090] DEBUG -- : request-header: accept => */*
+D, [2014-02-10T14:46:58.782754 #4090] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-02-10T14:46:58.782917 #4090] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-02-10T14:46:58.783127 #4090] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-02-10T14:46:58.783246 #4090] DEBUG -- : request-header: cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; rr_session=HAHzwDLoZ2UhpGx6Cb%2B%2FpV7luB%2BVnFFnMkzU9CNZ0cHoHnyBzUVaui1cbBAZwltmV7kGJtaoAdH7hx4%2FI%2FydDduyFo%2FT8G%2B2U6XjaR0FEJd%2FoNZMMZqkFIjw95uE7pwWBvTIKKuZJXf11hy6C%2F7rQWhAzzSS761LX2NynrpeaFGQglzKJ0wgd7mQXsNLttXU9WJiOQeyDd0mnMVedwznNXHnCJzjGCgJKrLF3TiargoHJLz0WQQzinVz5rYKw9CCcKX2tE7z4L%2B9uIxjU3NwtKDk2wKrVEzAF4D0FvIWvmFyvOtr32Btir39TBFCWcedA%2Fx84alnpmDh0g6GLuYetm63Jw%2FLtUUtWE2yQPirTrCZM5fj4DwjGPs9hVrxixc9qFoNL4DAnINnW51rNU1sFfLZMlc4tQt3NGe54oZKHFTDV4iozgl%2BNWSdDrZsUfG%2FLBk9ClRnhr2Y88Jy4gNNXMMpyySue%2BIIvJv76Va7f3et0LbJb8Rf%2BADXl5dsoE9N
+D, [2014-02-10T14:46:58.783413 #4090] DEBUG -- : request-header: host => www.mynvshen.com
+I, [2014-02-10T14:46:58.956730 #4090]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-02-10T14:46:58.956971 #4090] DEBUG -- : response-header: server => nginx
+D, [2014-02-10T14:46:58.957069 #4090] DEBUG -- : response-header: date => Mon, 10 Feb 2014 06:46:58 GMT
+D, [2014-02-10T14:46:58.957162 #4090] DEBUG -- : response-header: content-type => text/html
+D, [2014-02-10T14:46:58.957253 #4090] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-02-10T14:46:58.957408 #4090] DEBUG -- : response-header: connection => keep-alive
+D, [2014-02-10T14:46:58.957498 #4090] DEBUG -- : response-header: x-powered-by => PHP/5.4.15-1~dotdeb.2
+D, [2014-02-10T14:46:58.957658 #4090] DEBUG -- : response-header: set-cookie => XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed; expires=Mon, 10-Feb-2014 08:46:58 GMT; path=/
+D, [2014-02-10T14:46:58.957751 #4090] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-02-10T14:46:58.957994 #4090] DEBUG -- : Read 1850 bytes (1850 total)
+D, [2014-02-10T14:46:58.958271 #4090] DEBUG -- : gzip response
+D, [2014-02-10T14:46:58.959985 #4090] DEBUG -- : saved cookie: XSRF_COOKIE=56add31a17cde9b4ae5e7e944df147ed
