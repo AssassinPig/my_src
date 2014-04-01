@@ -1,28 +1,28 @@
 class Test
-    def initialize(data)
-        @data = data
-    end
+  def initialize(data)
+    @data = data
+  end
 
-    def self.set_ms_data(data)
-        @@msdata = data
-    end
+  def self.set_ms_data(data)
+    @@msdata = data
+  end
 
-    def info
-        print "#{@data}\n"
-        print "#{@@msdata}\n"
-    end
+  def info
+    print "#{@data}\n"
+    print "#{@@msdata}\n"
+  end
 
-    def print_self
-      print "#{self}\n"
-    end
+  def print_self
+    print "#{self}\n"
+  end
 
-    def self.print_self
-      print "#{self}\n"
-    end
+  def self.print_self
+    print "#{self}\n"
+  end
 
-    def my_method
-      @variable=1
-    end
+  def my_method
+    @variable=1
+  end
 end
 
 Test.set_ms_data(9)
@@ -49,3 +49,18 @@ p Module.class
 p Module.superclass
 p Class.class
 p Class.superclass
+
+class Dog
+  def bark
+    "WOOF"
+  end
+end
+
+class NewDog < Dog
+  def gowl
+    super.bark + ", ooo~"
+  end
+end
+
+newDog = NewDog.new
+newDog.gowl
