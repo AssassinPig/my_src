@@ -1,7 +1,7 @@
 require 'bcrypt'
 include BCrypt
 
-new_password="shao2014"
+new_password="123456"
 password_hash=Password.create(new_password)
 puts password_hash
 puts Password.new(password_hash)
