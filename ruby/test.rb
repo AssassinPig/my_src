@@ -46,3 +46,17 @@ else
   puts 'other'
 end
 
+a = "1,2,3,4"
+b = []
+a.split(',').each do |i|
+  b << i.to_i
+end
+print b
+
+def make_array(*args)
+  print args
+  print "\n"
+end
+make_array('a','b','c')
+
+#print Process.pid
