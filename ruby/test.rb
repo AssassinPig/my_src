@@ -37,3 +37,12 @@ childObj.myPublicFun
 print "#{$0}\n"
 print "#{__FILE__}\n"
 
+a = 'c'
+if a == 'a'
+  puts 'a'
+elsif a == 'b' 
+  puts 'b'
+else
+  puts 'other'
+end
+
