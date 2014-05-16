@@ -16,17 +16,14 @@ var client = net.createConnection(8124, '127.0.0.1', function(s){
 
 rl.on('line', function(line){
   if(line == "quit")
-{
-  console.log("quit");
-  client.end(line, 'utf8', function(){
-  });
-}
-else
-{
-  client.write(line, 'utf8', function(){
-  });
-}
-
+  {
+    console.log("quit");
+    client.end(line, 'utf8', function(){
+    });
+  } else {
+    client.write(line, 'utf8', function(){
+    });
+  }
 });
 
 client.on('end', function(){

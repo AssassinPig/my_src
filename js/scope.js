@@ -12,3 +12,4 @@ var f = function() {
   var scope = 'f';
 }
 f();
+

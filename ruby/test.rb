@@ -59,4 +59,10 @@ def make_array(*args)
 end
 make_array('a','b','c')
 
-#print Process.pid
+class StaticModule
+  def self.call
+    print "StaticModule.call\n"
+  end
+end
+
+StaticModule.call

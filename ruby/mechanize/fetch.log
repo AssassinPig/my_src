@@ -1,0 +1,35 @@
+# Logfile created on 2014-05-10 11:22:21 +0800 by logger.rb/44203
+I, [2014-05-10T11:22:21.213891 #24233]  INFO -- : Net::HTTP::Get: /
+D, [2014-05-10T11:22:21.213986 #24233] DEBUG -- : request-header: accept-encoding => gzip,deflate,identity
+D, [2014-05-10T11:22:21.214026 #24233] DEBUG -- : request-header: accept => */*
+D, [2014-05-10T11:22:21.214061 #24233] DEBUG -- : request-header: user-agent => Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/534.51.22 (KHTML, like Gecko) Version/5.1.1 Safari/534.51.22
+D, [2014-05-10T11:22:21.214094 #24233] DEBUG -- : request-header: accept-charset => ISO-8859-1,utf-8;q=0.7,*;q=0.7
+D, [2014-05-10T11:22:21.214140 #24233] DEBUG -- : request-header: accept-language => en-us,en;q=0.5
+D, [2014-05-10T11:22:21.214175 #24233] DEBUG -- : request-header: host => tieba.baidu.com
+I, [2014-05-10T11:22:21.637955 #24233]  INFO -- : status: Net::HTTPOK 1.1 200 OK
+D, [2014-05-10T11:22:21.641577 #24233] DEBUG -- : response-header: date => Sat, 10 May 2014 03:22:21 GMT
+D, [2014-05-10T11:22:21.641626 #24233] DEBUG -- : response-header: content-type => text/html; charset=GBK
+D, [2014-05-10T11:22:21.641661 #24233] DEBUG -- : response-header: transfer-encoding => chunked
+D, [2014-05-10T11:22:21.641713 #24233] DEBUG -- : response-header: connection => Keep-Alive
+D, [2014-05-10T11:22:21.641746 #24233] DEBUG -- : response-header: vary => Accept-Encoding
+D, [2014-05-10T11:22:21.641778 #24233] DEBUG -- : response-header: set-cookie => TIEBA_USERTYPE=cd2ee4aaebe6e350a4226d00; expires=Thu, 31-Dec-2020 15:59:59 GMT; path=/; domain=tieba.baidu.com, TIEBAUID=cb23caae14130a0d384a57f1; expires=Thu, 31-Dec-2020 15:59:59 GMT; path=/; domain=tieba.baidu.com, BAIDUID=03C0A81316BDCE0410534F1ADF9824F3:FG=1; expires=Sun, 10-May-15 03:22:21 GMT; max-age=31536000; path=/; domain=.baidu.com; version=1
+D, [2014-05-10T11:22:21.641811 #24233] DEBUG -- : response-header: tracecode => 13412417090309448714051011, 13412417090713150474051011
+D, [2014-05-10T11:22:21.641844 #24233] DEBUG -- : response-header: content-encoding => gzip
+D, [2014-05-10T11:22:21.641890 #24233] DEBUG -- : response-header: p3p => CP=" OTI DSP COR IVA OUR IND COM "
+D, [2014-05-10T11:22:21.641941 #24233] DEBUG -- : response-header: server => Apache
+D, [2014-05-10T11:22:21.642188 #24233] DEBUG -- : Read 3639 bytes (3639 total)
+D, [2014-05-10T11:22:21.642274 #24233] DEBUG -- : Read 4274 bytes (7913 total)
+D, [2014-05-10T11:22:21.642361 #24233] DEBUG -- : Read 3918 bytes (11831 total)
+D, [2014-05-10T11:22:21.642415 #24233] DEBUG -- : Read 394 bytes (12225 total)
+D, [2014-05-10T11:22:21.657914 #24233] DEBUG -- : Read 3702 bytes (15927 total)
+D, [2014-05-10T11:22:21.658103 #24233] DEBUG -- : Read 6370 bytes (22297 total)
+D, [2014-05-10T11:22:21.658232 #24233] DEBUG -- : Read 1822 bytes (24119 total)
+D, [2014-05-10T11:22:21.658390 #24233] DEBUG -- : Read 4096 bytes (28215 total)
+D, [2014-05-10T11:22:21.658466 #24233] DEBUG -- : Read 8192 bytes (36407 total)
+D, [2014-05-10T11:22:21.658537 #24233] DEBUG -- : Read 2250 bytes (38657 total)
+D, [2014-05-10T11:22:21.658592 #24233] DEBUG -- : Read 2336 bytes (40993 total)
+D, [2014-05-10T11:22:21.681557 #24233] DEBUG -- : Read 2386 bytes (43379 total)
+D, [2014-05-10T11:22:21.682015 #24233] DEBUG -- : gzip response
+D, [2014-05-10T11:22:21.704258 #24233] DEBUG -- : saved cookie: TIEBA_USERTYPE=cd2ee4aaebe6e350a4226d00
+D, [2014-05-10T11:22:21.704660 #24233] DEBUG -- : saved cookie: TIEBAUID=cb23caae14130a0d384a57f1
+D, [2014-05-10T11:22:21.705090 #24233] DEBUG -- : saved cookie: BAIDUID=03C0A81316BDCE0410534F1ADF9824F3:FG=1

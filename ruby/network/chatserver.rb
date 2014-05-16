@@ -3,16 +3,17 @@ include Socket::Constants
 
 class ChatServer
   public 
-  def initialize(port)
+  def initialize(ip, port)
+    @ip = ip
     @descriptors = Array::new
-    @serverSocket = TCPServer::new("", port)
+    @serverSocket = TCPServer::new(ip, port)
     @serverSocket.setsockopt(Socket::SOL_SOCKET, Socket::SO_REUSEADDR, 1)	
     printf "Chat server started on port%d\n", port
     @descriptors.push(@serverSocket)
   end #initialize
 
   def run
-    while 1
+    while true 
       res = select(@descriptors, nil, nil, nil)
       if res != nil then
         for sock in res[0]
@@ -58,6 +59,6 @@ class ChatServer
 
 end #server
 
-myChatServer = ChatServer.new(2626)
+myChatServer = ChatServer.new('127.0.0.1', 2626)
 myChatServer.run
 

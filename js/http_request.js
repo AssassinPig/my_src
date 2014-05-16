@@ -1,10 +1,10 @@
 var http = require('http');
 var options = {
-  hostname: 'www.google.com',
+  hostname: 'ruby-china.org',
   port: 80,
-  path: '/upload',
-  method: 'POST'
-};
+  path: '/topics/18595',
+  method: 'GET'
+}
 
 var req = http.request(options, function(res) {
   console.log('STATUS: ' + res.statusCode);
