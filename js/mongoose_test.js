@@ -1,9 +1,24 @@
 var mongoose = require('mongoose');
+
+
+/*
 var db = mongoose.createConnection('localhost', 'test');
 db.on('error', console.error.bind(console, 'connection failed'));
 db.once('open', function(){
 	console.log('open database success');
 	callback();
+});
+*/
+var config = {
+	db: 'mongodb://127.0.0.1/zshop'
+};
+
+var db = mongoose.connect(config.db, function (err) {
+  if (err) {
+    console.error('connect to %s error: ', config.db, err.message);
+    process.exit(1);
+  }
+  callback();
 });
 
 function callback() {

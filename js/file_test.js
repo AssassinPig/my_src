@@ -6,3 +6,8 @@ fs.readFile('scope.js', 'utf-8', function(err, data){
     console.log(data); 
   }
 });
+
+fs.writeFile('message.txt', 'Hello Node', function (err) {
+  if (err) throw err;
+  console.log('It\'s saved!');
+});
