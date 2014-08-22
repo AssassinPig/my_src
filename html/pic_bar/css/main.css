@@ -32,7 +32,6 @@ div {
 .zoom_pic {
 	height: 400px;
 	width: 400px;
-	float: left;
 	overflow: hidden;
 	border: 1px solid #000000;
 	display: none;
@@ -41,4 +40,18 @@ div {
 
 .zoom_pic img{
 	position: relative;
+}
+
+.main_pic {
+	overflow: hidden;
+	height: 360px;
+}
+
+.scale_frame {
+	position: relative;
+	border: 1px solid #ff0000;
+	height: 150px;
+	width: 150px;
+	z-index: 1000;
+	display: none;
 }
