@@ -21,7 +21,7 @@ sudo /etc/init.d/mongod restart
 自带简洁的javascript shell
 每一个文档都有特殊键"_id" 它在文档集合中是唯一的
 
-文档
+文档 document
 1.多个kv关联放在一起就是文档
 文档中的键值对是有序的
 {"greeting":"Hello"; "foo":3}
@@ -38,12 +38,60 @@ sudo /etc/init.d/mongod restart
 
 不能有重复的键
 
-集合
+集合 collection
 集合就是一个文档 类比于表
 集合是无模式的
 {"greet":"hello"}
 {"foo":5}
 可以放到一个集合中
+
+基本数据类型
+就是json的类型
+String
+Number
+Date
+Buffer
+Boolean
+Mixed
+ObjectId
+Array
+
+sub docs
+var childSchema = new Schema({ name: 'string' });
+var parentSchema = new Schema({
+	children: [childSchema]
+});
+
+var Parent = mongoose.model('Parent', parentSchema);
+var parent = new Parent({ children: [{name: 'Matt'},{name:'Sarah'}]);
+parent.children[0].name = 'Matthew';
+parent.save(callback);
+
+childSchema.pre('save', function(next){
+	if('invalid' == this.name) return next(new Error('#sadpanda'));
+	next();
+});
+
+var parent = new Parent({ children: [name:'invalid']});
+parent.save(function(err){
+	console.log(err.message);
+});
+
+find a sub-document
+var doc = parent.children.id(id);
+
+adding sub-docs
+parent.children.push({name: 'Liesl'});
+var subdoc = parent.children[0];
+subdoc.isNew; //true
+
+remove docs
+var doc = parent.children.id(id).remove();
+parent.save(function(err){
+	if(err) return handleError(err);
+	console.log();
+});
+
 ============================================================
 
 var mongoose = require('mongoose');
@@ -56,6 +104,13 @@ db.once('open', function(){
 //定义schema
 var PersonSchema = new mongoose.Schema({
 	name: String
+	Number
+	Date
+	Buffer
+	Boolean
+	Mixed
+	ObjectId
+	Array
 });
 
 //定义model
