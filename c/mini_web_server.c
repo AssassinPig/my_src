@@ -149,7 +149,7 @@ int main(int nargc, char* args[])
 	}
 
 	int f=1;
-	if (- 1== setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, (char*)&f, sizeof(f))) {
+	if (-1== setsockopt(listenfd, SOL_SOCKET, SO_REUSEADDR, (char*)&f, sizeof(f))) {
 		perror("setsockopt");                                                        
 		return -1;                                                                   
 	}                                                                                
