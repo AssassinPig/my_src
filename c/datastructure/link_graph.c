@@ -44,7 +44,7 @@ void InsertList(graph* graph, link_list *list)
 	node->next = NULL;
 	node->list = list;	
 }
-
+/*
 int main()
 {
 	//must have one graph_node as head
@@ -82,3 +82,4 @@ int main()
 	
 	return 0;
 }
+*/

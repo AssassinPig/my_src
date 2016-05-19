@@ -32,7 +32,7 @@ void printf_bit(const char a[], int len)
         printf("\t");
     } 
 }
-
+/*
 int main()
 {
     unsigned int i=1;
@@ -57,3 +57,4 @@ int main()
 
     return 0;
 }
+*/

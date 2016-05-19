@@ -1,5 +1,5 @@
 #include "zmultipletree.h"
-
+/*
 zmultiple_tree_t* create_multiple_tree()
 {
     zmultiple_tree_t* tree = (zmultiple_tree_t*)malloc(sizeof(zmultiple_tree_node_t));
@@ -85,4 +85,4 @@ void midorder_multiple_tree(zmultiple_tree_t* tree)
 {
 
 }
-
+*/

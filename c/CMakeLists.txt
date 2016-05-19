@@ -1,22 +1,30 @@
 PROJECT(main)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.6.4)
-AUX_SOURCE_DIRECTORY(. DIR_SRCS)
+
+#AUX_SOURCE_DIRECTORY(. DIR_SRCS)
 #INCLUDE_DIRECTORIES(/usr/local/include/)
+
 SET(CMAKE_BUILD_TYPE Debug)
 #SET(CMAKE_C_FLAGS_DEBUG "-O3 -Wall -g -std=c99")
 SET(CMAKE_C_FLAGS_DEBUG "-O3 -Wall -g -std=gnu99")
 
+AUX_SOURCE_DIRECTORY(./datastructure DIR_SRCS)
+add_subdirectory(datastructure)
+
 ADD_EXECUTABLE(main
 		main.c 	
-		zmalloc.c 
-		zlist.c
-		zstack.c
-		ztree.c 
-		zqueue.c
-		zstack02.c
-                zhash.c
+		${DIR_SRCS}
+	#	zmalloc.c 
+	#	zlist.c
+	#	zstack.c
+	#	ztree.c 
+	#	zqueue.c
+	#	zstack02.c
+        #        zhash.c
                 #zmultipletree.c
 		)
+TARGET_LINK_LIBRARIES(main datastructure)
+
 ADD_EXECUTABLE(socks5 socks5.c)
 TARGET_LINK_LIBRARIES(socks5 pthread)
 

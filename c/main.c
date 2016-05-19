@@ -1,21 +1,22 @@
 #include <stdio.h>
 #include <string.h>
 #include <signal.h>
-#include "zlist.h"
-#include "zmalloc.h"
-#include "zstack.h"
-#include "zstack02.h"
-#include "ztree.h"
-#include "zqueue.h"
-#include "zhash.h"
 
-#include "zsort.h"
-#include "zsearch.h"
+#include "datastructure/zstack.h"
+//#include "zlist.h"
+//#include "zmalloc.h"
+//#include "zstack.h"
+//#include "zstack02.h"
+//#include "ztree.h"
+//#include "zqueue.h"
+//#include "zhash.h"
+//#include "zsort.h"
+//#include "zsearch.h"
 
 #include <sys/time.h>
 
-extern zpool_t* pool;
-extern zpool_t* create_pool(int size);
+//extern zpool_t* pool;
+//extern zpool_t* create_pool(int size);
 
 void* mymemmove(char* des, char* src, size_t n)
 {
@@ -39,16 +40,16 @@ int main(int nargc, char* argv[])
 //	s = malloc(sizeof(stack_t));
 //	init(s);
 
-//	zstack_t* stack = create_stack();
-//	push(stack, "1");
-//	push(stack, "2");
-//	push(stack, "3");
-//	
-//	zstack_node_t* node = pop(stack);
-//	node = pop(stack);
-//	
-//	clear_stack(stack);
-//	printf("node->data %s\n", (const char*)node->data);
+	zstack_t* stack = create_stack();
+	push(stack, "1");
+	push(stack, "2");
+	push(stack, "3");
+	
+	zstack_node_t* node = pop(stack);
+	node = pop(stack);
+	
+	clear_stack(stack);
+	printf("node->data %s\n", (const char*)node->data);
 	
 //	zstack02_t* stack02 = create_stack02(10);
 //	push02(stack02, "1");
