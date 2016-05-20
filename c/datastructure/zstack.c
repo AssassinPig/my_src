@@ -3,11 +3,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-zstack_t* create_stack()
+zstack_t* create_stack(ptrFunDestroy ptrFun)
 {
     zstack_t* stack = (zstack_t*)malloc(sizeof(zstack_t));	
     if(stack) {
         stack->top= NULL;
+    	stack->ptrFun = ptrFun;
         return stack;
     }	
 
@@ -21,8 +22,9 @@ void clear_stack(zstack_t* stack)
         if(node == NULL) {
             break;
         }
-
-        free(node); //may be memory leak		
+	
+	stack->ptrFun(node->data);
+        free(node); 		
     }	
 
     free(stack);

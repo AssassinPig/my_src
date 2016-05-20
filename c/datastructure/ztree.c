@@ -97,7 +97,7 @@ void preorder2(ztree* tree)
         return;
     } 
 
-    zstack_t* stack = create_stack();
+    zstack_t* stack = create_stack(NULL);
     while(1) {
         if(node) {
             printf("%d\t", *(int*)node->data);
@@ -122,7 +122,7 @@ void midorder2(ztree* tree)
         return;
     } 
 
-    zstack_t* stack = create_stack();
+    zstack_t* stack = create_stack(NULL);
     while(node || top(stack)) {
         while(node) {
             push(stack, node);
@@ -145,7 +145,7 @@ void postorder2(ztree* tree)
         return;
     } 
 
-    zstack_t* stack = create_stack();
+    zstack_t* stack = create_stack(NULL);
     push(stack, node);
     while(top(stack)){
        while(node) {

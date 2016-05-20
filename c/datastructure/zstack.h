@@ -1,6 +1,8 @@
 #ifndef _ZSTACK_H__ 
 #define _ZSTACK_H__
 
+typedef void (*ptrFunDestroy)(void* ptrElem); 
+
 struct zstack_node
 {
 	void* data;	
@@ -12,11 +14,12 @@ typedef struct zstack_node zstack_node_t;
 struct zstack
 {
 	zstack_node_t* top;
+	ptrFunDestroy ptrFun;
 };
 
 typedef struct zstack zstack_t;
 
-zstack_t* create_stack();
+zstack_t* create_stack(ptrFunDestroy ptrFun);
 void clear_stack(zstack_t* stack);
 
 zstack_node_t* pop(zstack_t* stack);
